@@ -1,0 +1,166 @@
+/*
+StyleSheet
+Editors: Ben Silverman, Jennifer Lee
+For tjSTAR
+*/
+
+body
+{ background-color:#eaeaea;
+margin: 0px;
+font-size: 1em;
+background-image: url('images/back.gif');
+background-repeat: repeat-x;
+background-position: center top;
+font-family: Tahoma, Serif;
+}
+
+h1 {
+font-weight: bold;
+font-family: Tahoma, Serif;
+font-size: 1.6em;
+text-align: left;
+color: #00AEAB;
+text-indent: 0px;
+margin: 10px 10px 10px 10px;
+}
+
+h2 {
+font-weight: bold;
+color: #00AEAB;
+font-size: 1em;
+margin: 0px 0px 5px 30px;
+padding: 0px 0px 0px 0px;
+}
+
+blockquote {
+padding: 15px;
+}
+
+td#top {
+position: relative;
+text-align: left;
+height: 194px;
+background-image: url('images/topfill.gif');
+background-repeat: repeat-x;
+margin:0px;
+padding:0px;
+}
+
+td#footer {
+position: relative;
+height: 112px;
+z-index: 3;
+background-image: url('images/footerfill.gif');
+background-repeat: repeat-x;
+margin:0px;
+padding:0px;
+}
+
+table#content {
+min-height: 100%;
+width: 70%;
+height: 100%;
+margin-right: auto;
+margin-left: auto;
+padding:0px;
+}
+
+td#text ul{
+margin-left: 10px;
+margin-right: 10px;
+font-weight: bold;
+}
+
+td#text li{
+margin-left: 20px;
+margin-right: 20px;
+font-weight: normal;
+}
+
+td#text {
+margin: 0px;
+text-align: left;
+font-family: Tahoma, Serif;
+height: 100%;
+background-image: url('images/sidefill.gif');
+background-repeat: repeat-y;
+background-position: right;
+background-color: #eaeaea;
+vertical-align: top;
+min-width:550px;
+}
+
+td#text a:link, td#text a:active {
+text-decoration: none;
+color: #00AEAB;
+}
+
+td#text a:visited {
+color: #00AEAB;
+}
+
+b {
+color: #00AEAB;
+}
+
+td#menu { 
+min-height: 100%;
+background-color: #00aeab;
+height: 100%;
+text-align: left;
+font-family: Tahoma, Serif;
+font-size: 1.2em;
+/* color: #F7F7EA; */
+color: #FFFFFF;
+vertical-align: top;
+max-width:215px;
+width:215px;
+margin:0px;
+}
+
+td#menu ul {
+padding: 0px;
+margin-left: 10px;
+margin-bottom: 5px;
+}
+
+td#menu li {
+list-style-type: none;
+padding:0px;
+margin: 0px;
+}
+
+td#menu a:link, td#menu a:visited, td#menu a:active {
+padding-left:25px;
+text-decoration: none;
+color: #F7F7AD;
+list-style-type: none;
+}
+
+td#menu a:hover { 
+background-image: url("images/hoverback.gif");
+background-repeat: no-repeat;
+color: #FFFFFF;
+}
+
+div#logo {
+position: relative;
+z-index: 3;
+}
+
+table#portal_table {
+padding: 0px;
+margin: 0px;
+}
+
+p {
+padding: 0px 0px 0px 0px;
+margin: 0px 40px 10px 30px;
+text-align: justify;
+font-family: Tahoma, Serif;
+line-height:130%;
+}
+
+p.intro{
+margin: 10px 60px 10px 30px;
+}

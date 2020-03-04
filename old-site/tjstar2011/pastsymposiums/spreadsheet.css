@@ -1,0 +1,102 @@
+body {
+background-color: #eaeaea;
+font-family: Tahoma, "Arial", serif;
+font-size: 9.5pt;
+color: #000000;
+margin: 0px;
+}
+
+table#panels
+{width: 750px;
+border-spacing: 0px 20px;
+margin: 10px;
+}
+
+div#links
+{
+width: 750px;
+margin: 10px;
+word-spacing: 75px;
+text-align: center;
+font-size: 1.2em;
+}
+
+td {
+vertical-align: top;
+
+padding: 5px;
+}
+
+h1 
+{
+	font-family: Verdana, "Arial", Times, serif;
+	color: #00AEAB;
+	font-weight: bold;
+	font-size: 16pt;
+	margin-left: 10px;
+}
+
+tr.title
+{
+color: #000000;
+background-color: #FDFDF1;
+font-size: 1.2em;
+}
+
+
+td.title
+{
+color: #00AEAB;
+font-weight: bold;
+}
+
+td.speaker
+{
+width: 200px;
+}
+
+div#header {
+width: 100%;
+background-image: url('images/back.gif');
+background-repeat: repeat-x;
+height: 212px;
+vertical-align: bottom;
+background-color: #EEE2A7;
+font-size: 3em;
+color: #FDFDF1;
+line-spacing: 30px;
+border-bottom: 15px;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-color: #00AEAB;
+border-style: solid;
+}
+
+div#header a:link, div#header a:visited, div#header a:active
+{
+text-decoration: none;
+color: #FDFDF1;
+word-spacing: 0px;
+font-size: 16px;
+}
+
+tr:hover
+{
+background-color:#FDFDF1; 
+}
+
+div#links a:link, div#links a:visited, div#links a:active
+{
+text-decoration: none;
+color: #000000;
+}
+
+
+div#links a:hover
+{
+text-decoration: none;
+color: #00AEAB;
+}
+
+

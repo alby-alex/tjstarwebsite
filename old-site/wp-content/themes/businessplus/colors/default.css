@@ -1,0 +1,13 @@
+a,
+a:visited,
+#wp-calendar a,
+.copyright a:hover,
+.hentry .entry .entry-title a:hover {
+	color: #2D5C88;
+}
+#filter li a.active{
+    background: #f5f5f5;
+}
+#filter li a:hover{
+    background: #f5f5f5;
+}

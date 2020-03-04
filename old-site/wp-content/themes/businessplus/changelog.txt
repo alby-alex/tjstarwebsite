@@ -1,0 +1,16 @@
+*** BusinessPlus Changelog ***
+
+2012.08.28 - version 1.0.3
+* comments.php - Fixed layout issues when post set to password protected
+
+2012.07.03 - version 1.0.2
+ * /includes/meta-portfolio-items.php - Fixed line endings to avoid FTP upload error
+ 
+2012.07.02 - version 1.0.1 
+ * style.css - Fixed display bugs for Opera & IE browser
+ * includes/theme-options.php - Removed blank option
+ * /functions/js/custom_uploader.js - Fixed image upload issue with WP 3.4
+ * /includes/js/upload-button.js - Fixed image upload issue with WP 3.4 
+ 
+2012.06.30 - version 1.0 
+ * First release!

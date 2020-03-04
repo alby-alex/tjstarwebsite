@@ -1,0 +1,100 @@
+<?php
+function redirect($location) {
+	$url = 'https://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
+	if(substr($url, -1) == '/' OR substr($url, -1) == '\\')
+		$url = substr($url, 0, -1);
+
+	$url .="/";
+	$url .= $location;
+	header("Location: $url");
+	exit();
+}
+
+
+if($_COOKIE['EXPORT'] == NULL) //The user has not logged in
+	redirect("auth.php");
+
+session_name('EXPORT');
+session_start();
+
+if(md5($_SERVER['HTTP_USER_AGENT']) != $_SESSION['agent']) {
+	session_destroy();
+	setcookie("EXPORT", time()-3600);
+	redirect("auth.php");
+}
+
+if((time() - $_SESSION['last_activity_time']) > 1800) {
+	session_destroy();
+	setcookie("EXPORT", time()-3600);
+	redirect("auth.php");
+}
+
+$_SESSION['last_activity_time'] = time();
+
+$user_name = $_SESSION['user'];
+
+?>
+
+
+<?php
+
+function export_csv($table, $filename) {
+	// Connect database
+	$dbserver = "mysql.tjhsst.edu";
+	$dbusername = "2010jlee";
+	$dbpassword = "BsKVsnWS9ZZqDAzA";
+	$dbname = "srs";
+	$dbc = mysqli_connect($dbserver, $dbusername, $dbpassword);
+	if (!$dbc) {
+		echo "Fatal error. Please contact the TJSTAR staff.<br>";
+		exit();
+	}
+	mysqli_select_db($dbc, $dbname);
+	
+	$result = mysqli_query($dbc, "SELECT * FROM $table");
+	$num_rows = mysqli_num_rows($result);
+	
+	while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
+		print_r($row);
+	}
+}
+
+
+if ($_POST['Table'] != NULL) {
+	$allowed_tables = array('Student', 'Teacher', 'Speaker');
+	$table = $_POST['Table'];
+	if (in_array($table, $allowed_tables) == false) {
+		echo "Fatal error. Please report this error.<br>\n";
+		die();
+	}
+	if ($table == "Student") {
+		export_csv("StudentPresentations", "Students.csv");
+	}
+	if ($table == "Teacher") {
+		export_csv("Teachers", "Teachers.csv");
+	}
+	if ($table == "Speaker") {
+		export_csv("Speakers", "Speakers.csv");
+	}
+}
+
+?>
+
+<?php include("header_facebox.php"); ?>
+
+<p>
+Click which table you wish to export:
+
+<form name = "exp" method = "post" action = "export.php">
+
+<input type = "radio" name = "Table" value = "Student" /> Student <br />
+<input type = "radio" name = "Table" value = "Teacher" /> Teacher <br />
+<input type = "radio" name = "Table" value = "Speaker" /> Speaker <br />
+
+<input type = "submit" value = "Submit" />
+</form>
+
+</p>
+
+<?php include("footer.php"); ?>
+

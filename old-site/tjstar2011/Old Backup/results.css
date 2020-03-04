@@ -1,0 +1,68 @@
+body {
+background-color: #FFFFFF;
+font-family: verdana, "Times New Roman", Times, serif;
+font-size: 9.5pt;
+color: #635821;
+margin: 0px;
+}
+
+table#results
+{width: 600px;
+padding: 10px;
+}
+
+td#title
+{
+color: #00CC00;
+font-weight: bold;
+font-size: 12pt;
+}
+
+td#presenters
+{
+font-weight: bold;
+}
+
+div#header {
+width: 100%;
+border-bottom: 10px;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-color: #F0B976;
+border-style: solid;
+height: 150px;
+vertical-align: bottom;
+background-color: #EEE2A7;
+font-size: 16px;
+word-spacing: 20px;
+font-weight: bold;
+}
+
+div#header a:link, div#header a:visited, div#header a:active
+{
+text-decoration: none;
+color: #635821;
+word-spacing: 0px;
+}
+
+#spacer
+{
+width: 20px;
+}
+
+
+div#header a:hover
+{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+div#searchstats {
+text-align: right;
+margin-right: 50px;
+}
+
+div#search {
+padding: 30px;
+}

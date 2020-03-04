@@ -1,0 +1,95 @@
+body {
+	background-color:#eaeaea;
+	font-family:Tahoma, "Arial", serif;
+	font-size:9.5pt;
+	color:#000;
+	margin:0;
+}
+
+table#results {
+	width:750px;
+	margin-left:30px;
+}
+
+div#links {
+	text-align:right;
+	font-size:1.2em;
+	margin:10px;
+}
+
+td {
+	vertical-align:top;
+	padding:5px;
+}
+
+h1 {
+	font-family:Verdana, "Arial", Times, serif;
+	color:#00AEAB;
+	font-weight:700;
+	font-size:16pt;
+	margin-left:10px;
+}
+
+tr.title {
+	color:#000;
+	background-color:#FDFDFD;
+	font-size:1.2em;
+}
+
+td#title {
+	color:#00AEAB;
+	font-weight:700;
+}
+
+td#title2 {
+	color:#00AEAB;
+	font-weight:700;
+	width:520px;
+}
+
+td#room {
+	width:230px;
+}
+
+td#speaker {
+	width:520px;
+}
+
+div#header {
+	width:100%;
+	background-image:url('images/back.gif');
+	background-repeat:repeat-x;
+	height:212px;
+	vertical-align:bottom;
+	background-color:#FDFDFD;
+	font-size:3em;
+	color:#FDFDFD;
+	line-spacing:30px;
+	border-bottom:15px;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-color:#00AEAB;
+	border-style:solid;
+}
+
+div#header a:link,div#header a:visited,div#header a:active {
+	text-decoration:none;
+	color:#FDFDF1;
+	word-spacing:0;
+	font-size:16px;
+}
+
+tr:hover {
+	background-color:#FDFDFD;
+}
+
+div#links a:link,div#links a:visited,div#links a:active {
+	text-decoration:none;
+	color:#000;
+}
+
+div#links a:hover {
+	text-decoration:none;
+	color:#00AEAB;
+}

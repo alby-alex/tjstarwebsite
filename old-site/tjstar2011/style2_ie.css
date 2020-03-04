@@ -1,0 +1,206 @@
+/*
+StyleSheet - Lecture
+Editors: Jennifer Lee
+Version: 0.9
+For The TJHSST One Question Project
+*/
+
+body
+{ background-color:#eaeaea;
+margin: 0px;
+font-size: 1em;
+background-image: url('images/back.gif');
+background-repeat: repeat-x;
+background-position: center top;
+}
+
+div#text a:link, a:active {
+color: #297B15;
+text-decoration: none;
+}
+
+div#text a:visited {
+color: red;
+text-decoration: none;
+}
+
+div#text a:hover {
+border-color: #63D1F2;
+border-bottom: 2px;
+border-left: 0px;
+border-right: 0px;
+border-top: 0px;
+border-style: solid;
+text-decoration: none;
+}
+
+
+h1 {
+font-weight: bold;
+font-family: Tahoma, Serif;
+font-size: 1.6em;
+text-align: left;
+color: #00AEAB;
+text-indent: 50px;
+}
+
+
+h2 {
+font-weight: bold;
+color: #00AEAB;
+font-size: 1em;
+margin-left: 10px;
+}
+
+
+div#text ul
+{
+padding-left: 25px;
+margin-left:50px;
+margin-right: 50px;
+margin-top: 31px;
+margin-bottom: 31px;
+border-left:10px;
+border-right: 0px;
+border-top: 0px;
+border-bottom: 0px;
+border-style: solid;
+border-color: #F188A6;
+}
+
+blockquote {
+padding-left: 15px;
+margin-left:50px;
+margin-right: 50px;
+margin-top: 31px;
+margin-bottom: 31px;
+border-left:10px;
+border-right: 0px;
+border-top: 0px;
+border-bottom: 0px;
+border-style: solid;
+border-color: #63D1F2;
+}
+
+div#back {
+position: relative;
+z-index: 2;
+width: 100%;
+
+text-align: center;
+}
+
+td#top {
+position: relative;
+text-align: left;
+height: 194px;
+z-index: 3;
+background-image: url('images/topfill.gif');
+background-repeat: repeat-x;
+}
+
+td#footer {
+position: relative;
+height: 112px;
+z-index: 3;
+background-image: url('images/footerfill.gif');
+background-repeat: repeat-x;
+}
+
+table#content {
+min-height: 100%;
+width: 70%;
+height: 100%;
+
+}
+
+td#text {
+margin: 0px;
+text-align: justify;
+font-family: Tahoma, Serif;
+height: 100%;
+background-image: url('images/sidefill.gif');
+background-repeat: repeat-y;
+background-position: right;
+background-color: #eaeaea;
+vertical-align: top;
+}
+
+td#text a:link, td#text a:active {
+text-decoration: none;
+color: #00AEAB;
+}
+
+td#text a:visited {
+color: #00AEAB;
+}
+
+b {
+color: #00AEAB;
+}
+
+td#menu { 
+min-height: 100%;
+background-color: #00aeab;
+width: 201px;
+height: 100%;
+text-align: left;
+display: block;
+margin: 0;
+font-family: Tahoma, Serif;
+font-size: 1.2em;
+color: #F7F7EA;
+vertical-align: top;
+}
+
+td#menu ul {
+padding: 0px;
+margin-left: 10px;
+margin-bottom: 5px;
+}
+
+td#menu li {
+list-style-type: none;
+display: block;
+margin: 0px;
+}
+
+td#menu a:link, td#menu a:visited, td#menu a:active {
+padding-left: 25px;
+text-decoration: none;
+color: #F7F7EA;
+list-style-type: none;
+}
+
+td#menu a:hover { 
+background-image: url("images/hoverback.gif");
+background-repeat: no-repeat;
+}
+
+div#logo {
+position: relative;
+z-index: 3;
+}
+
+table#portal_table {
+padding: 0px;
+margin: 0px;
+}
+
+p {
+margin: 10px 20px 10px 10px;
+text-align: justify;
+font-family: Tahoma, Serif;
+}
+
+td#portal a:hover {
+background-align: bottom;
+}
+
+div#essential {
+float: right;
+border-style: solid;
+border-color: #00AEAB;
+border-weight: 2px;
+width: 200px;
+}

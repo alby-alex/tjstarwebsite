@@ -1,0 +1,106 @@
+body {
+background-color: #FFFFFF;
+font-family: Verdana, "Times New Roman", Times, serif;
+font-size: 9.5pt;
+color: #635821;
+margin: 0px;
+}
+
+table#panels
+{width: 750px;
+border-spacing: 0px 20px;
+margin: 10px;
+}
+
+div#links
+{
+width: 750px;
+margin: 10px;
+word-spacing: 150px;
+text-align: center;
+font-size: 1.2em;
+}
+
+td {
+vertical-align: top;
+
+padding: 5px;
+}
+
+h1 
+{
+	font-family: arial, "Times New Roman", Times, serif;
+	color: #00CC00;
+	font-weight: bold;
+	font-size: 16pt;
+	margin-left: 10px;
+}
+
+tr.title
+{
+color: #635821;
+background-color: #EEE2A7;
+font-size: 1.2em;
+}
+
+
+td.title
+{
+color: #00CC00;
+font-weight: bold;
+}
+
+td.speaker
+{
+width: 200px;
+}
+
+div#header {
+width: 100%;
+border-bottom: 10px;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-color: #F0B976;
+border-style: solid;
+height: 150px;
+vertical-align: bottom;
+background-color: #EEE2A7;
+font-size: 16px;
+font-weight: bold;
+word-spacing: 20px;
+line-spacing: 30px;
+}
+
+div#header a:link, div#header a:visited, div#header a:active
+{
+text-decoration: none;
+color: #635821;
+word-spacing: 0px;
+}
+
+tr:hover
+{
+background-color:#EEE2A7; 
+}
+
+div#header a:hover
+{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+div#links a:link, div#links a:visited, div#links a:active
+{
+text-decoration: none;
+color: #635821;
+}
+
+
+div#links a:hover
+{
+text-decoration: none;
+color: #00CC00;
+}
+
+
